@@ -1,0 +1,51 @@
+@font-face {
+    font-family: 'Folklore1';
+    src: url(../resources/FeDPit2.ttf);
+}
+
+@font-face {
+    font-family: 'Folklore2';
+    src: url(../resources/FeDPsc2.ttf);
+}
+
+:root{
+    --one: #ba502c;
+    --two: #141414;
+    --three: #ab8f34;
+    --four: #4d4d4d;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: var(--two);
+}
+
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo{
+    margin-left: 25px;
+    color: var(--one);
+    font-family: 'Folklore2', Times;
+    font-size: 40px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #eeeeee;
+    margin-right: 25px;
+    font-family: Arial;
+}
+
+header nav a:hover{
+ color: var(--three);
+}
