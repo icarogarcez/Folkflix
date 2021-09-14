@@ -23,7 +23,11 @@
 
 body{
     background: var(--two);
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
 }
+
+/* Header  */
 
 header .container{
     display: flex;
@@ -48,4 +52,26 @@ header nav a{
 
 header nav a:hover{
  color: var(--three);
+}
+
+/* Principal */
+
+.principal{
+    font-size: 20px;
+    background: linear-gradient(rgba(0, 0, 0, .30), rgba(0, 0, 0, .50)100%), url('/assets/resources/gatsby.png');
+    height: 500px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.principal .resume{
+    margin-bottom: 30px;
+}
+
+.title{
+    font-size: 40px;
+    font-weight: 700;
 }
