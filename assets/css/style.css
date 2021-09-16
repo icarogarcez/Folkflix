@@ -113,3 +113,9 @@ header nav a:hover{
 .btn i{
     margin-right: 1vh;
 }
+
+.box-movie{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
