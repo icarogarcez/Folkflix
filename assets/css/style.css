@@ -1,17 +1,17 @@
 @font-face {
-    font-family: 'Folklore1';
-    src: url(../resources/FeDPit2.ttf);
+    font-family: 'GhibliNormal';
+    src: url(../resources/Eyad\ Al-Samman\ -\ Ghibli.otf);
 }
 
 @font-face {
-    font-family: 'Folklore2';
-    src: url(../resources/FeDPsc2.ttf);
+    font-family: 'GhibliBold';
+    src: url(../resources/Eyad\ Al-Samman\ -\ Ghibli-Bold.otf);
 }
 
 :root{
-    --one: #ba502c;
-    --two: #141414;
-    --three: #ab8f34;
+    --one: #FF3333;
+    --two: #000000;
+    --three: #FF9333;
     --four: #4d4d4d;
 }
 
@@ -23,7 +23,7 @@
 
 body{
     background: var(--two);
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Lucida Grande', 'Lucida Sans', Arial;
     color: white;
 }
 
@@ -34,20 +34,29 @@ header .container{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    padding: 10px;
+}
+
+header img{
+    vertical-align:-18%;
+    margin-right: 10px;
 }
 
 header .logo{
-    margin-left: 25px;
+    align-self: center;
+    margin-left: 10px;
     color: var(--one);
-    font-family: 'Folklore2', Times;
+    font-family: 'GhibliBold', Arial;
     font-size: 40px;
+    letter-spacing: .2rem;
 }
 
 header nav a{
     text-decoration: none;
     color: #eeeeee;
-    margin-right: 25px;
-    font-family: Arial;
+    margin-right: 20px;
+    transition: .3s ease all;
+    font-size: 15px;
 }
 
 header nav a:hover{
@@ -58,8 +67,8 @@ header nav a:hover{
 
 .principal{
     font-size: 20px;
-    background: linear-gradient(rgba(0, 0, 0, .30), rgba(0, 0, 0, .50)100%), url('/assets/resources/gatsby.png');
-    height: 500px;
+    background: linear-gradient(rgba(0, 0, 0, .30), rgba(0, 0, 0, .50)100%), url('/assets/resources/howlsbackground.jpg');
+    height: 75vh;
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -68,10 +77,34 @@ header nav a:hover{
 }
 
 .principal .resume{
-    margin-bottom: 30px;
+    margin-bottom: 2%;
 }
 
 .title{
+    margin-top: 12%;
     font-size: 40px;
     font-weight: 700;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial;
+}
+
+.btn{
+    background-color: rgba(0, 0, 0, .50);
+    border: none;
+    color: #ffffff;
+    padding: 12px 28px;
+    margin-right: 15px;
+    font-size: 15px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: .5s ease all;
+}
+
+.btn:hover{
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.btn i{
+    margin-right: 7px;
+    width: 20px;
 }
