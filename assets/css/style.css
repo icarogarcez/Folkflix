@@ -89,6 +89,7 @@ header nav a:hover{
     margin-top: 8%;
     margin-bottom: 2%;
     font-size: 40px;
+    font-weight: 900;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial;
 }
 
@@ -139,8 +140,27 @@ header nav a:hover{
     }
 }
 
+@media screen and (max-width: 360px) and (min-width: 200px){
+    header .container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .btn{
+        margin-top: 1.5%;
+        width: 70%;
+    }
+
+    .principal{
+        height: 90vh;
+        width: 100%;
+        background-position: center;
+        background-size: cover;
+    }
+}
+
 @media screen and (min-width: 1000px){
     .principal .resume{
-        width: 60%;
+        width: 50%;
     }
 }
